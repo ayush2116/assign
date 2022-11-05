@@ -4,7 +4,7 @@ import Text from './components/Text';
 function App() {
   return (
     <div className="App">
-      <Text></Text>
+      <Text />
     </div>
   );
 }
