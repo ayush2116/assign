@@ -1,33 +1,41 @@
-import React from 'react'
-import { TextField, Stack } from '@mui/material'
-import './Text.css'
+import React from "react";
+import { TextField, Button} from "@mui/material";
+import "./Text.css";
 const Text = () => {
-  
   return (
-   
-    <div spacing={4}>
-         <div direction = 'row' spacing ={2}>
-        <TextField  
-        variant='outlined'
-        placeholder='name'
-        InputProps={{
-          className: 'input',
-          disableUnderline: true,
-        
-        }}
+    <div>
+      <div>
+        <TextField
+          variant="standard"
+          id="outlined-required"
+          label="name"
+          margin="normal"
+          InputProps={{
+            className: "textAreaStyle",
+            disableUnderline: true,
+          
+          }}
+         
         />
-        <TextField  
-        variant='outlined'
-        placeholder='name'
-        InputProps={{
-          className: 'input',
-          disableUnderline: true,
-        
-        }}
+      </div>
+      <div>
+        <TextField
+        margin="normal"
+          variant="standard"
+         
+          label="contact number"
+          InputProps={{
+            className: "textAreaStyle",
+            disableUnderline: true,
+          }}
         />
+      </div>
+      
+      <Button 
+    
+      >Login</Button>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Text
+export default Text;
