@@ -12,7 +12,7 @@ const Text = () => {
     "& .MuiOutlinedInput-root":{"& > fieldset": {border: '2px solid  #1d72e7'}},
     "& .MuiOutlinedInput-root.Mui-focused": {"& > fieldset": {borderColor: " #1d72e7"}}
   }}
-  id="outlined-basic"
+ 
   label="name"
   variant="outlined"
 />
@@ -26,7 +26,7 @@ const Text = () => {
     "& .MuiOutlinedInput-root":{"& > fieldset": {border: '2px solid  #1d72e7'}},
     "& .MuiOutlinedInput-root.Mui-focused": {"& > fieldset": {borderColor: " #1d72e7"}}
   }}
-  id="outlined-basic"
+
   label="number"
   variant="outlined"
 />
