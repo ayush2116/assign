@@ -5,35 +5,36 @@ const Text = () => {
   return (
     <div>
       <div>
-        <TextField
-          variant="standard"
-          id="outlined-required"
-          label="name"
-          margin="normal"
-          InputProps={{
-            className: "textAreaStyle",
-            disableUnderline: true,
-          
-          }}
-         
-        />
+      <TextField
+      margin="normal"
+  sx={{
+    "& label.Mui-focused": {color: " #1d72e7" },
+    "& .MuiOutlinedInput-root:hover": { "& > fieldset": { borderColor: " #1d72e7"}},
+    "& .MuiOutlinedInput-root":{"& > fieldset": {border: '2px solid  #1d72e7'}},
+    "& .MuiOutlinedInput-root.Mui-focused": {"& > fieldset": {borderColor: " #1d72e7"}}
+  }}
+  id="outlined-basic"
+  label="name"
+  variant="outlined"
+/>
       </div>
       <div>
-        <TextField
-        margin="normal"
-          variant="standard"
-         
-          label="contact number"
-          InputProps={{
-            className: "textAreaStyle",
-            disableUnderline: true,
-          }}
-        />
+      <TextField
+      margin="normal"
+  sx={{
+    "& label.Mui-focused": { color: " #1d72e7" },
+    "& .MuiOutlinedInput-root:hover": { "& > fieldset": { borderColor: " #1d72e7"}},
+    "& .MuiOutlinedInput-root":{"& > fieldset": {border: '2px solid  #1d72e7'}},
+    "& .MuiOutlinedInput-root.Mui-focused": {"& > fieldset": {borderColor: " #1d72e7"}}
+  }}
+  id="outlined-basic"
+  label="number"
+  variant="outlined"
+/>
       </div>
       
-      <Button 
-    
-      >Login</Button>
+      
+      <Button> Login </Button>
     </div>
   );
 };
